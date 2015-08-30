@@ -54,17 +54,17 @@
 								<div class="form-group">
 									<label for="new-forum-name-input">Forum Name</label>
 									<input type="text" class="form-control new-user-details-control" id="new-forum-name-input" 
-										data-show="all" placeholder="Forum Name" />
+										data-show-for-game="all" placeholder="Forum Name" />
 								</div>
 								<div class="form-group">
 									<label for="new-battle-tag-input">Battle.net Tag</label>
 									<input type="text" class="form-control new-user-details-control" id="new-battle-tag-input" 
-										data-show="heroes-of-the-storm" placeholder="Battle.net Tag" />
+										data-show-for-game="heroes-of-the-storm" placeholder="Battle.net Tag" />
 								</div>
 								<div class="form-group">
 									<label for="new-lol-region-select">Region</label>
 									<select class="form-control new-user-details-control" id="new-lol-region-select"
-										data-show="league-of-legends">
+										data-show-for-game="league-of-legends">
 										<option value="EUW">EUW</option>
 										<option value="EUNE">EUNE</option>
 										<option value="NA">NA</option>
@@ -73,7 +73,7 @@
 								<div class="form-group">
 									<label for="new-hots-region-select">Region</label>
 									<select class="form-control new-user-details-control" id="new-hots-region-select"
-										data-show="heroes-of-the-storm">
+										data-show-for-game="heroes-of-the-storm">
 										<option value="EU">EU</option>
 										<option value="NA">NA</option>
 									</select>
@@ -84,12 +84,12 @@
 							<div class="form-group">
 								<label for="ts-id-input">TS ID</label>
 								<input type="text" class="form-control new-user-details-control" id="ts-id-input" 
-									placeholder="TS ID" />
+									data-show-for-game="all" placeholder="TS ID" />
 							</div>
 							<div class="form-group">
 								<label for="application-url-input">Link to Application</label>
 								<input type="text" class="form-control new-user-details-control" id="application-url-input"
-									placeholder="Link to Application"
+									data-show-for-game="all" placeholder="Link to Application"
 								/>
 							</div>
 						</div>
@@ -98,31 +98,41 @@
 					<h3 class="text-primary">
 						<strong>Interview</strong>
 					</h3>
-					<div class="well" class="async-content-block" data-content="interview">Loading...</div>
+					<div class="well async-content-block" data-content="interview">
+						<strong>Loading...</strong>
+					</div>
 
-					<h3 class="text-primary">
+					<h3 class="text-success">
 						<strong>Application</strong>
 						<small>Accepted</small>
 					</h3>
-					<div class="well" class="async-content-block" data-content="application-accepted">Loading...</div>
+					<div class="well async-content-block" data-content="application-accepted">
+						<strong>Loading...</strong>
+					</div>
 
-					<h3 class="text-primary">
+					<h3 class="text-success">
 						<strong>Application</strong>
 						<small>On Trial</small>
 					</h3>
-					<div class="well" class="async-content-block" data-content="application-on-trial">Loading...</div>
+					<div class="well async-content-block" data-content="application-on-trial">
+						<strong>Loading...</strong>
+					</div>
 
-					<h3 class="text-primary">
+					<h3 class="text-danger">
 						<strong>TED</strong>
 						<small>Title</small>
 					</h3>
-					<div class="well" class="async-content-block" data-content="ted-title">Loading...</div>
+					<div class="well async-content-block" data-content="ted-title">
+						<strong>Loading...</strong>
+					</div>
 
-					<h3 class="text-primary">
+					<h3 class="text-danger">
 						<strong>TED</strong>
 						<small>Content</small>
 					</h3>
-					<div class="well" class="async-content-block" data-content="ted-content">Loading...</div>
+					<div class="well async-content-block" data-content="ted-content">
+						<strong>Loading...</strong>
+					</div>
 				</div>
 			</div>
 		</div>
