@@ -24,6 +24,7 @@
 						<a href="../" class="btn btn-primary">Home</a>
 					</div>
 
+					<!-- START Game select -->
 					<div class="margin-bottom-25">
 						<div class="form-inline">
 							<div class="form-group">
@@ -44,7 +45,9 @@
 							</div>
 						</div>
 					</div>
+					<!-- END Game select -->
 
+					<!-- START Details of New User form -->
 					<div class="margin-bottom-25">
 						<h4>
 							<strong>Details of New User</strong>
@@ -82,9 +85,9 @@
 						</div>
 						<div class="form-inline">
 							<div class="form-group">
-								<label for="ts-id-input">TS ID</label>
+								<label for="ts-id-input">TeamSpeak ID</label>
 								<input type="text" class="form-control new-user-details-control" id="ts-id-input" 
-									data-show-for-game="all" placeholder="TS ID" />
+									data-show-for-game="all" placeholder="TeamSpeak ID" />
 							</div>
 							<div class="form-group">
 								<label for="application-url-input">Link to Application</label>
@@ -94,11 +97,22 @@
 							</div>
 						</div>
 					</div>
+					<!-- END Details of New User form --> 
+
+					<!-- START Content boxes -->
+					<h3 class="text-primary">
+						<strong>Interview</strong>
+						<small>General</small>
+					</h3>
+					<div class="well async-content-block" data-content="interview-general">
+						<strong>Loading...</strong>
+					</div>
 
 					<h3 class="text-primary">
 						<strong>Interview</strong>
+						<small>Game Specific</small>
 					</h3>
-					<div class="well async-content-block" data-content="interview">
+					<div class="well async-content-block" data-content="interview-specific">
 						<strong>Loading...</strong>
 					</div>
 
@@ -133,13 +147,16 @@
 					<div class="well async-content-block" data-content="ted-content">
 						<strong>Loading...</strong>
 					</div>
+					<!-- END Content boxes -->
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="../js/jquery-2.1.4.min.js?v=0"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js?v=0"></script>
+	<script type="text/javascript" src="../js/jquery/jquery-2.1.4.min.js?v=0"></script>
+	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js?v=0"></script>
+	<script type="text/javascript" src="../js/momentjs/moment.js?v=0"></script>
+	<script type="text/javascript" src="../js/momentjs/moment-timezone-with-data.js?v=0"></script>
 	<script type="text/javascript" src="js/main.js?v=0"></script>
 </body>
 
