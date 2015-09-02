@@ -37,6 +37,17 @@ If you still would like to edit them however,
 you probably only want to update the interview-general.html file in the default 'content' folder
 and the interview-specific.html file in the game specific folders.
 
+The following table specifies which HTML file corresponds with which box on the page.
+
+Content Block Name | HTML File Name
+------------------ | --------------
+Interview - General | interview-general.html
+Interview - Game Specific | interview-specific.html
+Application - Accepted | application-accepted.html
+Application - On Trial | application-on-trial.html
+TED - Title | ted-title.html
+TED - Content | ted-content.html
+
 #### How should I edit the files?
 
 Choose your file and click on the pencil icon in the header on the right that says *'Edit this file'*.
