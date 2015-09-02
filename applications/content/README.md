@@ -62,7 +62,7 @@ before you click the *'Commit changes'* button.
 **You will be able to break things!**
 Everything you commit will be online right away.
 When you did something wrong and broke the website but are not able to revert it yourself,
-please contact me as soon as possible and I will revert the change
+please contact me as soon as possible and I will revert the change.
 
 #### What should the content look like?
 
@@ -84,11 +84,11 @@ that the user has filled into the form fields near the top of the page.
 The following placeholders are being used:
 * **{game-name}** - The name of the game, selected in the first dropdownlist
 * **{forum-name}** - The forum name of the new trialist, filled into the corresponding text box
-* **{hots-battle-tag}** - The Battle.net tag for Heroes of the Storm, filled in the corresponding text box
+* **{hots-battle-tag}** - The Battle.net tag for Heroes of the Storm, filled into the corresponding text box
 * **{lol-region}** - The region in League of Legends, selected in the corresponding dropdownlist
 * **{hots-region}** - The region in Heroes of the Storm, selected in the corresponding dropdownlist
-* **{ts-id}** - The TeamSpeak ID of the new trialist
-* **{link-application}** - The link to the application thread
+* **{ts-id}** - The TeamSpeak ID of the new trialist, filled into the corresponding text box
+* **{link-application}** - The link to the application thread, filled into the corresponding text box
 * **{start-trial-date-short}** - The start date of the trial in dd/mm/yyyy
 * **{end-trial-date-short}** - The end date of the trail in dd/mm/yyyy
 * **{start-trial-date-long}** - The start date of the trial in [day] [full month name]
