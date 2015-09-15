@@ -59,26 +59,34 @@
 								<div class="form-group">
 									<label for="new-forum-name-input">Forum Name</label>
 									<input type="text" class="form-control new-user-details-control" id="new-forum-name-input" 
-										data-show-for-game="all" placeholder="Forum Name" />
+										data-show-for-games="all" placeholder="Forum Name" />
 								</div>
 								<div class="form-group">
-									<label for="new-battle-tag-input">Battle.net Tag</label>
-									<input type="text" class="form-control new-user-details-control" id="new-battle-tag-input" 
-										data-show-for-game="heroes-of-the-storm" placeholder="Battle.net Tag" />
+									<label for="new-battle-net-tag-input">Battle.net Tag</label>
+									<input type="text" class="form-control new-user-details-control" id="new-battle-net-tag-input" 
+										data-show-for-games="heroes-of-the-storm overwatch" placeholder="Battle.net Tag" />
+								</div>
+								<div class="form-group">
+									<label for="new-hots-region-select">Region</label>
+									<select class="form-control new-user-details-control" id="new-hots-region-select"
+										data-show-for-games="heroes-of-the-storm">
+										<option value="NA">NA</option>
+										<option value="EU">EU</option>
+									</select>
 								</div>
 								<div class="form-group">
 									<label for="new-lol-region-select">Region</label>
 									<select class="form-control new-user-details-control" id="new-lol-region-select"
-										data-show-for-game="league-of-legends">
+										data-show-for-games="league-of-legends">
 										<option value="EUW">EUW</option>
 										<option value="NA">NA</option>
 										<option value="EUNE">EUNE</option>
 									</select>
 								</div>
 								<div class="form-group">
-									<label for="new-hots-region-select">Region</label>
-									<select class="form-control new-user-details-control" id="new-hots-region-select"
-										data-show-for-game="heroes-of-the-storm">
+									<label for="new-overwatch-region-select">Region</label>
+									<select class="form-control new-user-details-control" id="new-overwatch-region-select"
+										data-show-for-games="overwatch">
 										<option value="NA">NA</option>
 										<option value="EU">EU</option>
 									</select>
@@ -89,13 +97,12 @@
 							<div class="form-group">
 								<label for="ts-id-input">TeamSpeak ID</label>
 								<input type="text" class="form-control new-user-details-control" id="ts-id-input" 
-									data-show-for-game="all" placeholder="TeamSpeak ID" />
+									data-show-for-games="all" placeholder="TeamSpeak ID" />
 							</div>
 							<div class="form-group">
 								<label for="application-url-input">Link to Application</label>
 								<input type="text" class="form-control new-user-details-control" id="application-url-input"
-									data-show-for-game="all" placeholder="Link to Application"
-								/>
+									data-show-for-games="all" placeholder="Link to Application" />
 							</div>
 						</div>
 					</div>
@@ -159,7 +166,7 @@
 	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js?v=0"></script>
 	<script type="text/javascript" src="../js/momentjs/moment.js?v=0"></script>
 	<script type="text/javascript" src="../js/momentjs/moment-timezone-with-data.js?v=0"></script>
-	<script type="text/javascript" src="js/main.js?v=0"></script>
+	<script type="text/javascript" src="js/main.js?v=1"></script>
 </body>
 
 </html>

@@ -84,9 +84,10 @@ that the user has filled into the form fields near the top of the page.
 The following placeholders are being used:
 * **{game-name}** - The name of the game, selected in the first dropdownlist
 * **{forum-name}** - The forum name of the new trialist, filled into the corresponding text box
-* **{hots-battle-tag}** - The Battle.net tag for Heroes of the Storm, filled into the corresponding text box
-* **{lol-region}** - The region in League of Legends, selected in the corresponding dropdownlist
+* **{battle-net-tag}** - The Battle.net tag for specific games, filled into the corresponding text box
 * **{hots-region}** - The region in Heroes of the Storm, selected in the corresponding dropdownlist
+* **{lol-region}** - The region in League of Legends, selected in the corresponding dropdownlist
+* **{overwatch-region}** - The region in Overwatch, selected in the corresponding dropdownlist
 * **{ts-id}** - The TeamSpeak ID of the new trialist, filled into the corresponding text box
 * **{link-application}** - The link to the application thread, filled into the corresponding text box
 * **{start-trial-date-short}** - The start date of the trial in dd/mm/yyyy
