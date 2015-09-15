@@ -26,9 +26,10 @@
 		 * The following placeholders are being used:
 		 * {game-name}
 		 * {forum-name}
-		 * {hots-battle-tag}
-		 * {lol-region}
+		 * {battle-net-tag}
 		 * {hots-region}
+		 * {lol-region}
+		 * {overwatch-region}
 		 * {ts-id}
 		 * {link-application}
  		 * {start-trial-date-short}
@@ -39,9 +40,10 @@
 
 		return content.replace(/{game-name}/g, '<span class="game-name-placeholder"></span>')
 			.replace(/{forum-name}/g, '<span class="forum-name-placeholder"></span>')
-			.replace(/{hots-battle-tag}/g, '<span class="hots-battle-tag-placeholder"></span>')
-			.replace(/{lol-region}/g, '<span class="lol-region-placeholder"></span>')
+			.replace(/{battle-net-tag}/g, '<span class="battle-net-tag-placeholder"></span>')
 			.replace(/{hots-region}/g, '<span class="hots-region-placeholder"></span>')
+			.replace(/{lol-region}/g, '<span class="lol-region-placeholder"></span>')
+			.replace(/{overwatch-region}/g, '<span class="overwatch-region-placeholder"></span>')
 			.replace(/{ts-id}/g, '<span class="ts-id-placeholder"></span>')
 			.replace(/{link-application}/g, '<span class="link-application-placeholder"></span>')
 			.replace(/{start-trial-date-short}/g, '<span class="start-trial-date-short-placeholder"></span>')
@@ -55,9 +57,10 @@
 	function updateTextInPlaceholderSpans($blockContext) {
 		$('span.game-name-placeholder', $blockContext).text($('#game-select option:selected').text());
 		$('span.forum-name-placeholder', $blockContext).text($('#new-forum-name-input').val());
-		$('span.hots-battle-tag-placeholder', $blockContext).text($('#new-battle-tag-input').val());
-		$('span.lol-region-placeholder', $blockContext).text($('#new-lol-region-select').val());
+		$('span.battle-net-tag-placeholder', $blockContext).text($('#new-battle-net-tag-input').val());
 		$('span.hots-region-placeholder', $blockContext).text($('#new-hots-region-select').val());
+		$('span.lol-region-placeholder', $blockContext).text($('#new-lol-region-select').val());
+		$('span.overwatch-region-placeholder', $blockContext).text($('#new-overwatch-region-select').val());
 		$('span.ts-id-placeholder', $blockContext).text($('#ts-id-input').val());
 		$('span.link-application-placeholder', $blockContext).text($('#application-url-input').val());
 		$('span.start-trial-date-short-placeholder', $blockContext).text(currentDateFormats.startShort);
@@ -94,9 +97,9 @@
 			// Show form controls that are specifically there for the chosen game
 			$('.new-user-details-control').each(function () {
 				var $detailsControl = $(this);
-				var showControlForGame = $detailsControl.data('show-for-game');
+				var showControlForGames = $detailsControl.data('show-for-games');
 				
-				if (showControlForGame === selectedGame || showControlForGame === 'all') {
+				if (showControlForGames.split(' ').indexOf(selectedGame) !== -1 || showControlForGames === 'all') {
 					$detailsControl.parent('.form-group').show();
 				} else {
 					$detailsControl.parent('.form-group').hide();
