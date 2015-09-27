@@ -78,7 +78,7 @@ When you don't do that, a space will be used instead between the lines.
 * `<` is a reserved character in HTML. Use `&lt;` instead.
 * `>` is a reserved character in HTML. Use `&gt;` instead.
 
-Like you may notice, I also you placeholders in `{` `}`.
+Like you may notice, I also use placeholders in `{` `}`.
 These placeholders are used to fill in the dates or the content
 that the user has filled into the form fields near the top of the page.
 The following placeholders are being used:
